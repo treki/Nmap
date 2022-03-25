@@ -1,0 +1,128 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    max-width: 1200px;
+    background-color:#f4f8fb;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+section{
+
+  padding-top: 30px;
+}
+h1{
+    font-family: 'Manrope', sans-serif;
+    font-size: 75px;
+    background: -webkit-linear-gradient(111Deg,#60aef8, #f46692, #ffc444);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+h2{
+    font-family: 'Manrope', sans-serif;
+    font-size: 32px;
+    font-weight: 800;
+}
+#header{
+   text-align: center;
+   margin-top: 70px;
+  
+}
+p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 10px;
+}
+#search-area{
+    background-color: #ffffff;
+    width: auto;
+    height: 150px;
+    border-radius: 20px;
+    padding: 50px 70px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+form{
+    display: flex;
+    flex-direction: row;
+    border-radius: 20px;
+    border: solid 1px #dadada;
+    padding:2px;
+  }
+  #label{
+    font-family: 'Manrope', sans-serif;
+    font-size: 35px;
+    background: -webkit-linear-gradient(80Deg,#60aef8, #f46692, #ffc444);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  
+    margin-bottom: 30px;
+}
+  input {
+    flex-grow:2;
+    border:none;
+    height: 60px;
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    padding-left: 25px;
+  }
+  input:focus {
+    outline: none;
+    color: #494949;
+  }
+  button {
+    background-image: linear-gradient(to right, #fa5853 0%, #f46692 50%, #ffc444 100%);
+    color: #f5f5f7;
+    border: none;
+    border-radius: 20px;
+    padding: 20px;
+    width: 100px;
+   
+    height: auto;
+    font-size: 25px;
+    cursor: pointer;  
+    padding-left: auto;
+    padding-right: 10px;
+
+}
+
+button:hover{
+    background-image: linear-gradient(to right, #fa5853 100%, #f46692 50%, #ffc444 0%);
+}
+x-card{
+    margin: 0 auto;
+    width: 80%;
+}
+x-card:nth-child(1){
+    width: 30%;
+    float: left;
+    padding: 2rem;
+}
+x-card:nth-child(2){
+    width: 40%;
+    float: left;
+    padding: 2rem;
+}
+
+h2{
+    text-align: center;
+}
+ul li{
+    list-style-type: none;
+}
+.ports{
+    background-color: #f5f5f7;
+    border-radius: 3px;
+    padding: 20px;
+    
+}
+footer{
+    
+}
+@media only screen and (min-width: 1040px) {
+    body {
+        width: 100%;
+    }
+  }

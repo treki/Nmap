@@ -1,0 +1,61 @@
+<!--#!/bin/bash
+echo "Content-type: text/html"
+echo ""
+cat <<EOT  -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Karla&family=Manrope:wght@700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <title>Port Scanner</title>
+</head>
+<body>
+    <main>
+        <section id="header">
+        <h1>Port Scanner</h1>
+        <p>A simple TCP Port Scan to quickly determine the status of an Internet facing service or firewall. <br>Uses the powerful Nmap port scanner.</p>
+  
+    <div id="search-area">
+        <div id="label" for="IP-Address">Enter Website or IP Address</div>
+        <form action="submit.cgi" method="get">
+            <input id="input" placeholder="Enter website or IP" type="text" name="site" size="20">
+            <button id="scan-button" type="submit"  onclick="load()" value="Scan">SCAN</button>
+        </form>
+    </div>
+    <div id="result-scan">
+        <h2></h2>
+    </div>
+
+</section>
+<h2> What is this TCP Port Scan?</h2>
+<p>The TCP Port Scan will test an IP Address or Hostname for common open ports. This technique of testing for listening services is known as a port scan.
+</p>
+</section>
+<section id="common-ports">
+<h2>Common Ports</h2>
+<div class="ports">
+<ul>
+    <li>21 - FTP: File Transfer Protocol is a very common service from the early days of the Internet. Allowing transfer of files. A key point on today's modern Internet is that FTP is n></li>
+    <li>22 - SSH: Secure Shell is a protocol from remote access to systems usually in a "Terminal Shell". It is an encrypted protocol that performs a similar function to the clear text t></li>
+    <li>23 - Telnet: Legacy remote management service. Access to text shell on remote system. No encryption. </li>
+    <li>80 - HTTP: Hyper Text Transport Protocol is the service that delivers web pages to a browser.</li>
+    <li>443 - HTTPS: The Secure version of HTTP, this performs the same service of web page delivery but is encrypted using SSL or TLS.</li>
+    <li>3380 - RDP: Remote Desktop Protocol is a way to remotely access Windows based systems, giving the user a full desktop environment of the remote computer.</li>
+</ul>
+</div>
+
+</section>
+</main>
+<footer>
+   <p>If you've any feedback/suggestion for this website, please let me know</p>
+    <p>PortScanner.com | Privacy Policy</p>
+</footer>
+</body>
+
+</html>
+
